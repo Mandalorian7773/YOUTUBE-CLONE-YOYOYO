@@ -2,120 +2,79 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
 }
 
-/* Header Styles */
-header {
-    background-color: #ff0000;
+/* Header */
+.header {
+    background-color: #FF0000;
+    color: white;
     padding: 10px;
-}
-
-.header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    color: white;
+    justify-content: space-between;
 }
 
-.search-bar input {
-    padding: 7px;
-    width: 400px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
+.search-bar {
+    width: 50%;
+    padding: 8px;
 }
 
-.search-bar button {
-    padding: 7px;
-    background-color: #f8f8f8;
+.search-button {
+    padding: 8px 16px;
+    background-color: white;
     border: none;
     cursor: pointer;
 }
 
-.user-icons button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    margin-left: 15px;
-    cursor: pointer;
+.search-button:hover {
+    background-color: #f2f2f2;
 }
 
-/* Sidebar Styles */
-.main-container {
-    display: flex;
-}
-
+/* Sidebar */
 .sidebar {
     width: 200px;
-    background-color: white;
-    padding: 15px;
-    border-right: 1px solid #ddd;
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    padding-top: 20px;
 }
 
 .sidebar ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 .sidebar ul li {
-    padding: 10px 0;
+    padding: 15px;
+    cursor: pointer;
 }
 
-.sidebar ul li a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
+.sidebar ul li:hover {
+    background-color: #ddd;
 }
 
-.sidebar ul li a:hover {
-    background-color: #f1f1f1;
-}
-
-/* Content (Video Grid) */
-.content {
-    flex-grow: 1;
+/* Main Content */
+.main-content {
+    margin-left: 220px;
     padding: 20px;
 }
 
 .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-.video-card {
-    background-color: white;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.video {
+    width: 200px;
+    text-align: center;
 }
 
-.video-card img.thumbnail {
+.video img {
     width: 100%;
-    border-radius: 5px;
+    height: auto;
+    border-radius: 8px;
 }
 
-.video-info {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.video-info img.avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.video-info h4 {
-    margin: 0;
-    font-size: 16px;
-}
-
-.video-info p {
-    font-size: 14px;
-    color: #666;
 }
